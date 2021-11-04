@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS page2</title>
+	<!-- my CSS  -->
+	<link href="style.css" rel="stylesheet" >
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		
+		document.write("<h1>Hello Page 2</h1>"); //using HTML tags
+		//example of calculations - multiplication/dividing/plus/minus
+    var x = 2;
+    var y = 5;
+    var result = x/y;
+    document.write("Answer: ", + result);
+
+    //example of function by javascript tags in order to make a reminder for a customer (what details did he enter in the message bar)
+        setInterval(function(){
+            var messageinput = document.getElementById('message');
+            window.alert("This is your question and email adress" + message);
+        }, 15000); //interval set is 15 seconds so it would not pop up to often
+
+
+		
+	</script>
+  </head>
+  <body>
+	<h3>If you have any other questions, please send in input row your question and your email so our team would respond to it later on.</h3>
+    <hr></hr>
+    <h4>Enter your question and email adress here: <input id='message' /><h4> <!--html input row for a fictional area where you can add your question and details for customer support team etc-->
+        <p>(NOTE: The message that you have entered will automaticly remind you <br></br>every 15 seconds about what question did you asked and which email adress you added)</p>
+        <!-- Here I wanted to add a fictional button somehow to allow customers to send the message to a fictional company adress after they will click it-->
+        <!-- Was in a hurry and did not add it due to gitbash issues -->
+<br>
+<br>
+
+	<a href="js-index.html">Back</a>
+	
+  </body>
+</html>

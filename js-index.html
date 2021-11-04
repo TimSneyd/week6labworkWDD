@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS index</title>
+	<!-- my CSS  -->
+	<link href="style.css" rel="stylesheet" >
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		//document.write("Hi"); //write direct to webpage
+		document.write("<h1>WWW.YAJA.ORG</h1>"); //using HTML tags
+		
+		//This alert is an informative message that asks visitors to enter data carefuly so the website for customers for example or employees would respond correctly
+		alert("ATTENTION, Pkease enter name of your request accurately following the instructions that will be mentioned in the brackets, in a pop-up prompt");
+		
+		//This area is all about adding first of all your name and the request so the website would answer correctly giving further isntructions (where as 2nd page will be contacting page and as a "que area")
+		var name = parseInt(prompt("Enter your name"));
+var request = parseInt(prompt("Choose your request and enter it( *customer support* or *Join the team*"));
+if((request === 'customer support') || (request === 'join the team')) //in both cases of a request, website would respond correctly and give further instructions and a link button to click so you can stand in a que with your question
+{
+
+document.write("<br \>Hello " + name+ ", our customer support team will contact <br \>Please, fill in the application following the link below (*page2*) and proceed, we will look at your details and reply shortly");
+}else{ //in case of adding options of a request unaccurately - this message will apear 
+document.write("<br \>This request is not supported, please try again or contact us");
+}
+
+	</script>
+  </head>
+  <br></br>
+  <hr></hr>
+   <!--example of calculating-->
+  	<javascript type="text/javascript"> 
+			var x = 10;
+    		var y = 2;
+    			var result = x*y;
+    document.write("Answer: ", + result);
+	</javascript>
+	<hr></hr>
+  <body>
+	<h3>Please follow the link bellow to jump to a que page</h3>
+	<hr></hr>
+	<a href="page2.html">Page 2</a>
+	
+	
+  </body>
+</html>
